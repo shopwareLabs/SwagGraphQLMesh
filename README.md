@@ -5,7 +5,12 @@ This is a proof of concept to test GraphQL Mesh for Shopware 6.
 We used [GraphQL Mesh](https://the-guild.dev/graphql/mesh/docs) as base because you can combine different sources and it is easy to setup.
 
 ## Screens
-![admin API screen GraphQL Mesh](https://raw.githubusercontent.com/shopwareLabs/SwagGraphQLMesh/main/assets/shopware-6-graphQL-mesh-admin.png){: width="30%"} ![store API screen GraphQL Mesh](https://raw.githubusercontent.com/shopwareLabs/SwagGraphQLMesh/main/assets/shopware-6-graphQL-mesh-store.png){: width="30%"}
+
+**admin API**
+![admin API screen GraphQL Mesh](https://raw.githubusercontent.com/shopwareLabs/SwagGraphQLMesh/main/assets/shopware-6-graphQL-mesh-admin.png)
+
+**store API**
+![store API screen GraphQL Mesh](https://raw.githubusercontent.com/shopwareLabs/SwagGraphQLMesh/main/assets/shopware-6-graphQL-mesh-store.png)
 
 ## Dependencies
 - We rely on `@shopware/api-gen` and `@shopware/api-client`
