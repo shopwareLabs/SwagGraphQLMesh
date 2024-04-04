@@ -1,7 +1,8 @@
 # SwagGraphQLMesh
 
 ## Why?
-This is a proof of concept to test GraphQL Mesh for Shopware 6.  
+This is a proof of concept to test GraphQL Mesh for Shopware 6.
+
 We used [GraphQL Mesh](https://the-guild.dev/graphql/mesh/docs) as base because you can combine different sources and it is easy to setup.
 
 ## Screens
@@ -49,7 +50,7 @@ query ProductQuery {
 ### admin API
 
 **infoShopwareVersion**
-```
+```graphQL
 query CurrenShopwareVersionQuery {
   infoShopwareVersion {
     version
