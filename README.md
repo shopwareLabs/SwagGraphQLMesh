@@ -89,7 +89,7 @@ query CurrenShopwareVersionQuery {
 ## Troubleshooting
 
 ### Query missing in Explorer?
-If your Endpoint is a POST Request make sure the `operationId` of your Endpoint is present in `.meshrc.yaml` file. Only GET Requests are added by default as `Query` in GraphQL Mesh.
+If your Endpoint is a POST Request use a mutation instead. In Explorer (dev mode) you can switch the view to mutations.
 
 ### Fetch failed
 You see something like `"message": "fetch failed"` as a Response of your Query, make sure your local or cloud instance is running.
