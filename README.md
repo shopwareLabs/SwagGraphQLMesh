@@ -11,13 +11,12 @@ We used [GraphQL Mesh](https://the-guild.dev/graphql/mesh/docs) as base because 
 ## How to test it in development?
 - Checkout this repository and run `pnpm install`
 - Make sure you have a local or cloud instance of Shopware 6 running
-- Put your URL and credentials in `.env.adminapi` and `.env.storeapi`
+- Put your URL and credentials in `.env.storeapi`
 - Execute `pnpm run create:storeapi:json` to update the schema (with the schema from your instance)
-- Execute `pnpm run create:adminapi:json` to update the schema (with the schema from your instance)
-- Start the source you want to test with one of these commands `pnpm run start:storeapi` or `pnpm run start:adminapi`
+- Start the source you want to test with one of these commands `pnpm run start:storeapi`
 
 ## How to use it in production?
-:warning: Be careful not to expose sensitive data. So if you do not need the admin API source remove it from `.meshrc.yaml`. There is also an option to filter out specific endpoints, check GraphQL Mesh documentation for that.
+:warning: Be careful not to expose sensitive data. There is also an option to filter out specific endpoints, check GraphQL Mesh documentation for that.
 
 - With `pnpm run build` you generate the GraphQL Schema for every source
 - With `pnpm run start` you starting the production server  
@@ -73,18 +72,6 @@ mutation readProductListing {
   }
 }
 ```
-
-### admin API
-
-**infoShopwareVersion**
-```graphQL
-query CurrenShopwareVersionQuery {
-  infoShopwareVersion {
-    version
-  }
-}
-```
-:warning: Filters, aggregations and some fields are not workig or returning data. More investigation needed.
 
 ## Troubleshooting
 

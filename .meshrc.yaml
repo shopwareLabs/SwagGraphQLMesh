@@ -6,15 +6,3 @@ sources:
         operationHeaders:
           Content-Type: application/json
           "sw-access-key": '{env.OPENAPI_ACCESS_KEY}'
-  - name: Shopware6AdminApi
-    handler:
-      openapi:
-        source: ./schema/adminApi.json
-        operationHeaders:
-          Content-Type: application/json
-          Authorization-Bearer: Bearer {context.cookies.accessToken}
-          OpenApi-Json-Url: '{env.OPENAPI_JSON_URL}'
-          Shopware-Admin-Username: '{env.SHOPWARE_ADMIN_USERNAME}'
-          Shopware-Admin-Password: '{env.SHOPWARE_ADMIN_PASSWORD}'
-
-customFetch: ./src/custom-fetch.ts
